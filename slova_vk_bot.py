@@ -76,9 +76,9 @@ while True:
                     send(f"Твое слово: {slovo_by_user}")
                     try:
                         if slovo_by_user in usedwordsIDS[ids] or slovo_by_user[0] != slova_base_people[ids][-1][-1] or len(str(slovo_by_user).split()) >= 2 :
-                            usedwordsIDS[ids].clear()
                             send("Ты проебала дура")
-                            slova_base_people[ids].clear()
+                            slova_base_people[ids] = []
+                            usedwordsIDS[ids] = []
                             igra_not_lose = False
                             play_or_not[ids] = False
                     except:
