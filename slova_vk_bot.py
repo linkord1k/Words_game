@@ -88,7 +88,7 @@ while True:
                         try:
                             tmp = 0
                             for i in words[slovo_by_user[-1]]:
-                                if words[slovo_by_user[-1]][tmp] in usedwordsIDS:
+                                if words[slovo_by_user[-1]][tmp] in usedwordsIDS[ids]:
                                     tmp += 1
                                 else:
                                     slovo = words[slovo_by_user[-1]][tmp]
